@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Button Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .heart-button {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6b81; /* Heart color */
+            border: none;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            transform: rotate(-45deg);
+            transition: transform 0.3s;
+        }
+
+        .heart-button:before,
+        .heart-button:after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #ff6b81; /* Heart color */
+            border-radius: 50%; /* Make circles */
+            position: absolute;
+        }
+
+        .heart-button:before {
+            top: -50px; /* Position the top circle */
+            left: 0;
+        }
+
+        .heart-button:after {
+            left: 50px; /* Position the right circle */
+            top: 0;
+        }
+
+        .heart-button:hover {
+            transform: scale(1.1) rotate(-45deg); /* Grow on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="heart-button" onclick="alert('Heart clicked!')"></button>
+
+</body>
+</html>
