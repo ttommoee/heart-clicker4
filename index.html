@@ -23,7 +23,7 @@
             content: '';
             width: 100px;
             height: 100px;
-            background-color: #ff6b81; /* Heart color */
+            background-color: #ff0000; /* Heart color */
             border-radius: 50%; /* Make circles */
             position: absolute;
         }
@@ -41,11 +41,28 @@
         .heart-button:hover {
             transform: scale(1.1) rotate(-45deg); /* Grow on hover */
         }
+
+        .heart-button:onclick {
+            transform: scale(1.1) rotate(-45deg); /* Grow on click */
+        }
     </style>
 </head>
 <body>
-
-    <button class="heart-button" onclick="alert('Heart clicked!')"></button>
-
+    <div class="container">
+        <h1 class="header_text">Когда ты нажмёшь 100 раз,</h1>
+        <h1 class="header_text">то произойдёт что-то необычное!</h1>
+        <div id="counter">0</div>
+        <button class="heart-button" onclick=""></button>
+        <script>
+            let count = 0;
+            function increaseCounter() {
+                count++;
+                document.getElementById("counter').innerText = count;
+                                        }
+                if ("count" = 100) {
+                    window.location.href="index2.html";
+                }
+        </script>
+    </div>
 </body>
 </html>
