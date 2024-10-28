@@ -7,3 +7,20 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.header_text {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font: bold;
+}
+
+#counter {
+    line-height: 1.2; /* Adjust line height */
+    margin: 0; /* Remove default margin */
+    transform: translateY(-10%); /* Move slightly up */
+    color: rgb(255, 255, 255);
+    font: bold;
+}
+    
